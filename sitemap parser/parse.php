@@ -13,6 +13,9 @@ curl_setopt($ch,CURLOPT_URL,$urls->loc);
 curl_setopt($ch,CURLOPT_RETURNTRANSFER,true);
 
 $output=curl_exec($ch);
+
+echo $output;
+
 curl_close($ch);
 ?>
 <!DOCTYPE html>
