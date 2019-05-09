@@ -13,13 +13,18 @@
 <body>
 <div class="container">
   <h1>Upload your sitemap</h1>
+  <p>Hint: The xml parser is vulnerable to XXE</p>
   <form action="parse.php" method="POST" enctype="multipart/form-data">
    <div class="form-group">
      <input type="file" name="sitemap" />
    </div>
    <button type="submit" class="btn btn-primary">Submit</button>
  </form>
-
 </div>
+
+<footer class="page-footer font-small blue">
+  <div class="footer-copyright text-center py-3">Made by <a target="_blank" href="http://twitter.com/PsychoCodes/">shibli2700</a></a>
+  </div>
+</footer>
 </body>
 </html>
