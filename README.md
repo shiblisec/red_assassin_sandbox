@@ -1,2 +1,3 @@
-# red_assassin_sandbox
-A repo for multiple vulnerabilities enclosed in sandboxes
+# RedAssassin Sandbox
+
+A repository where you can find sandboxes for multiple vulnerable applications.
