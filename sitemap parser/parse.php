@@ -5,9 +5,7 @@ $dom = new DOMDocument();
 $dom->loadXML($file_content, LIBXML_NOENT | LIBXML_DTDLOAD);
 $urls = simplexml_import_dom($dom);
 
-echo $urls->loc;
-
-echo $urls->loc
+//echo $urls->loc;
 
 $ch = curl_init();
 
