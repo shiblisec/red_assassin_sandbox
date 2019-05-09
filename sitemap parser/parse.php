@@ -5,18 +5,6 @@ $dom = new DOMDocument();
 $dom->loadXML($file_content, LIBXML_NOENT | LIBXML_DTDLOAD);
 $urls = simplexml_import_dom($dom);
 
-echo $urls->loc;
-
-$ch = curl_init();
-
-curl_setopt($ch,CURLOPT_URL,$urls->loc);
-curl_setopt($ch,CURLOPT_RETURNTRANSFER,true);
-
-$output=curl_exec($ch);
-
-echo $output;
-
-curl_close($ch);
 ?>
 <!DOCTYPE html>
 <html>
@@ -33,6 +21,11 @@ curl_close($ch);
 <body>
 <div class="container">
   <h1>Sitemap successfully crawled..</h1>
+  <p>Sitename:<br>
+    <pre>
+      <?php echo $urls->loc; ?>
+    </pre>
+  </p>
 </div>
 </body>
 </html>
